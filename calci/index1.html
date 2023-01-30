@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calucator</title>
+    <style>
+        .formstyle{
+            width: 300px;
+            height: 585px;
+            border: 3px solid black;
+            margin:auto;
+            padding:20px;
+            border-radius: 5px;
+        }
+        input{
+            background-color: green;
+            color:white;
+            width:50px;
+            height:80px;
+            border:3px solid grey;
+            border-radius:10px;
+            padding:26px;
+            font-size: 20px;
+            margin:4px;
+        }
+        #calc{
+            width:220px;
+            height:7px;
+        }
+        #clear{  
+        width: 270px;  
+        border: 3px solid gray;  
+    border-radius: 3px;  
+    padding: 10px;  
+    background-color: red;  
+}  
+    </style>
+</head> 
+<body>
+    <div class="formstyle">
+        <form name="form1">
+    <input type="text" name="inputfield" id="calc"><br><br>
+    <input type="button" value="1" onclick="form1.inputfield.value += '1'">
+    <input type="button" value="2" onclick="form1.inputfield.value += '2'">
+    <input type="button" value="3" onclick="form1.inputfield.value += '3'">
+    <input type="button" value="+" onclick="form1.inputfield.value += '+'">
+    <br><br>
+    <input type="button" value="4" onclick="form1.inputfield.value += '4'">
+    <input type="button" value="5" onclick="form1.inputfield.value += '5'">
+    <input type="button" value="6" onclick="form1.inputfield.value += '6'">
+    <input type="button" value="-" onclick="form1.inputfield.value += '-'">
+    <br><br>
+    <input type="button" value="7" onclick="form1.inputfield.value += '7'">
+    <input type="button" value="8" onclick="form1.inputfield.value += '8'">
+    <input type="button" value="9" onclick="form1.inputfield.value += '9'">
+    <input type="button" value="*" onclick="form1.inputfield.value += '*'">
+    <br><br>
+    <input type="button" value="/" onclick="form1.inputfield.value += '/'">
+    <input type="button" value="0" onclick="form1.inputfield.value += '0'">
+    <input type="button" value="." onclick="form1.inputfield.value += '.'">
+    <input type="button" value="=" onclick="form1.inputfield.value = eval(form1.inputfield.value)">
+    <br><br>
+    <input type="button" value="clear" id="clear" onclick="form1.inputfield.value =' '">
+    </form>
+    </div>
+</body>
+</html>
